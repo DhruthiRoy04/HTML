@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 20px;
+        }
+        p  { 
+            font-size: small;
+            color: darkblue;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <form action="/submit-feedback" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="type">Feedback Type:</label><br>
+        <select id="type" name="type" required><br><br>
+            <option value="general">General</option>
+            <option value="bug">Bug Report</option>
+            <option value="suggestion">Suggestion</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        Comments:<br>
+        <textarea id="comments" name="comments" rows="4"  cols="50"></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+        <p>Please let us know your experience in our restaurent</p>
+        <p>please visit next time!!</p>
+    </form>
+</body>
+</html>
